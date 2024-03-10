@@ -1,5 +1,5 @@
 var key = 7;
-var abecedario = [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789 '];
+var abecedario = [...'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789 abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789 '];
 
 
 function cifrar(){
@@ -16,7 +16,7 @@ function cifrar(){
 
     
     for(i=0; i<=Longitud; i++){
-        for(j=0; j<62; j++){
+        for(j=0; j<65; j++){
             if(Message[i] == abecedario[j]){
                 MessageCifrado[i] = abecedario[j+key];
             }
@@ -42,7 +42,7 @@ function descifrar(){
     }
 
     for(i=0; i<Longitud; i++){
-        for(j=62; j<abecedario.length; j++){
+        for(j=65; j<abecedario.length; j++){
             if(Message[i] == abecedario[j]){
                 MessageDescifrado[i] = abecedario[j-key];
             }
@@ -50,6 +50,7 @@ function descifrar(){
     }
 
     MessageDescifrado = MessageDescifrado.join("");
+    console.log(MessageDescifrado);
     
     document.getElementById("EncabezadoMessage").innerHTML = "El mensaje descifrado es:"
 
