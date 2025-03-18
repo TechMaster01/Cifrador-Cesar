@@ -15,7 +15,7 @@ function cifrar(){
     document.getElementById("EncabezadoMessage").innerHTML = "El mensaje cifrado es:"
 
     
-    for(i=0; i<=Longitud; i++){
+    for(i=0; i<Longitud; i++){
         for(j=0; j<65; j++){
             if(Message[i] == abecedario[j]){
                 MessageCifrado[i] = abecedario[j+key];
