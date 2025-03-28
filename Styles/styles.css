@@ -48,6 +48,9 @@
     align-content: center;
     justify-content: center;
     text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .Button{
@@ -55,4 +58,15 @@
     margin-top: 20px;
     padding: 10px;
     border-radius: 5px;
+}
+
+#Mensaje {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    font-size: 16px; 
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
