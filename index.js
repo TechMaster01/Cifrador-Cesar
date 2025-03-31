@@ -1,11 +1,11 @@
-var key = 7;
-var abecedario = [...'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789 abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789 '];
+let key = 7;
+let abecedario = [...'aábcdeéfghiíjklmnñoópqrstuúüvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚÜVWXYZ0123456789 aábcdeéfghiíjklmnñoópqrstuúüvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚÜVWXYZ0123456789 '];
 
 
 function cifrar(){
-    var Message = document.getElementById("Mensaje").value;
-    var Longitud = Message.length;
-    var MessageCifrado = [];
+    let Message = document.getElementById("Mensaje").value;
+    let Longitud = Message.length;
+    let MessageCifrado = [];
     
     if(Longitud == 0){
         alert("Escriba un mensaje por favor!");
@@ -32,9 +32,9 @@ function cifrar(){
 }
 
 function descifrar(){
-    var Message = document.getElementById("Mensaje").value;
-    var Longitud = Message.length;
-    var MessageDescifrado = [];
+    let Message = document.getElementById("Mensaje").value;
+    let Longitud = Message.length;
+    let MessageDescifrado = [];
     
     if(Longitud == 0){
         alert("Escriba un mensaje por favor!");
